@@ -1,7 +1,7 @@
 {
-  "name": "test_library",
+  "name": "test_library1_bewe",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -41,6 +41,10 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.22.5",
+    "@babel/plugin-transform-react-jsx": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
     "@storybook/addon-essentials": "^7.0.24",
     "@storybook/addon-interactions": "^7.0.24",
     "@storybook/addon-links": "^7.0.24",
@@ -55,8 +59,12 @@
     "storybook": "^7.0.24",
     "webpack": "^5.88.0"
   },
-    "files": [
-        "dist"      
-    ],
-    "main": "dist/index.js"
+  "files": [
+    "dist/*"
+  ],
+  "main": "dist/index.js",
+  "engines": {
+    "node": ">=16.17.0",
+    "npm": ">=6.14.0"
+  }
 }
